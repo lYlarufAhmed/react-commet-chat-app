@@ -69,7 +69,7 @@ class KitchenSinkApp extends React.PureComponent {
           {authRedirect}
           {loader}
           {errorMessage}
-          <p css={titleStyle()}>Kitchen Sink App</p>
+          <p css={titleStyle()}>Universal Chat App</p>
           <p css={subtitleStyle()}>Login with one of our sample users</p>
           <div css={userContainerStyle()}>
             <div css={userWrapperStyle()} onClick={()=>this.login('superhero1')}>

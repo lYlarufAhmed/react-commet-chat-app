@@ -3,7 +3,7 @@ import { Router, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createBrowserHistory } from 'history';
 /** @jsxRuntime classic */
-/** @jsx jsx */
+/*z @jsx jsx */
 import { jsx } from '@emotion/core';
 
 import PrivateRoute from '../../PrivateRoute';
@@ -15,12 +15,12 @@ import * as actions from '../../store/action';
 
 import {
     CometChatUI,
-    CometChatConversationList,
-    CometChatConversationListWithMessages,
-    CometChatUserList,
-    CometChatUserListWithMessages,
-    CometChatGroupList,
-    CometChatGroupListWithMessages
+    // CometChatConversationList,
+    // CometChatConversationListWithMessages,
+    // CometChatUserList,
+    // CometChatUserListWithMessages,
+    // CometChatGroupList,
+    // CometChatGroupListWithMessages
 } from '../../cometchat-pro-react-ui-kit/CometChatWorkspace/src';
 
 import {
@@ -45,12 +45,12 @@ class App extends React.Component {
                 <Router history={history}>
                     <Switch>
                         <PrivateRoute path="/embedded-app" component={CometChatUI} />
-                        <PrivateRoute path="/conversations" component={CometChatConversationListWithMessages} />
-                        <PrivateRoute path="/groups" component={CometChatGroupListWithMessages} />
-                        <PrivateRoute path="/users" component={CometChatUserListWithMessages} />
-                        <PrivateRoute path="/conversation-list" component={CometChatConversationList} />
-                        <PrivateRoute path="/group-list" component={CometChatGroupList} />
-                        <PrivateRoute path="/user-list" component={CometChatUserList} />
+                        {/*<PrivateRoute path="/conversations" component={CometChatConversationListWithMessages} />*/}
+                        {/*<PrivateRoute path="/groups" component={CometChatGroupListWithMessages} />*/}
+                        {/*<PrivateRoute path="/users" component={CometChatUserListWithMessages} />*/}
+                        {/*<PrivateRoute path="/conversation-list" component={CometChatConversationList} />*/}
+                        {/*<PrivateRoute path="/group-list" component={CometChatGroupList} />*/}
+                        {/*<PrivateRoute path="/user-list" component={CometChatUserList} />*/}
                         <PrivateRoute exact path="/" component={HomePage} />
                         <Route path="/login" component={KitchenSinkApp} />
                     </Switch>
